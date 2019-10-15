@@ -6,7 +6,7 @@ module Jason
   # Jason loads this module only if it can find `ActionView`.
   class RailsTemplateHandler
     class_attribute :default_format
-    self.default_format = Mime::JSON
+    self.default_format = Mime[:json]
     
     # Compile the Rails template.
     # 
